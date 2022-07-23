@@ -35,7 +35,7 @@
     },
     "DB_CLIENT": {
       "description": "Database server type.",
-      "value": "mysql"
+      "value": "pg"
     },
     "RATE_LIMITER_ENABLED": {
       "description": "Whether the rate limiter should be enabled or not.",
