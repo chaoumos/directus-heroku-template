@@ -6,7 +6,10 @@
     "start": "directus start"
   },
   "dependencies": {
-    "directus": "^9.0.0-rc.40",
+    "directus": "^9.14.5",
     "pg": "^8.5.1"
+  },
+    "engines": {
+    "node": "14.17.5"
   }
 }
