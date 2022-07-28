@@ -1,2 +1,2 @@
 release: npx directus bootstrap
-web: npx directus start
+web: CONFIG_PATH="/path/to/config.js" npx directus start
