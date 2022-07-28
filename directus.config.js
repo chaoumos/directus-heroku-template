@@ -3,12 +3,12 @@ const parseDbUrl = require("parse-database-url");
 const dbConfig = parseDbUrl(process.env.DATABASE_URL);
 
 module.exports = {
-  DB_CLIENT: parseDbUrl(process.env.DATABASE_URL).driver || "walo",
-  DB_HOST: parseDbUrl(process.env.DATABASE_URL).host || "walo",
-  DB_PORT: parseDbUrl(process.env.DATABASE_URL).port || "walo",
-  DB_DATABASE: parseDbUrl(process.env.DATABASE_URL).database || "walo",
-  DB_USER: parseDbUrl(process.env.DATABASE_URL).user || "walo",
-  DB_PASSWORD: parseDbUrl(process.env.DATABASE_URL).password,
+  DB_CLIENT: dbConfig.driver || "walo",
+  DB_HOST: dbConfig.host || "walo",
+  DB_PORT: dbConfig.port || "walo",
+  DB_DATABASE: dbConfig.database || "walo",
+  DB_USER: dbConfig.user || "walo",
+  DB_PASSWORD: dbConfig.password || "walo",
 
   DB_CONNECTION_STRING:
     process.env.DB_CONNECTION_STRING || process.env.DATABASE_URL,
