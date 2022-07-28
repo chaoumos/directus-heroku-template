@@ -27,7 +27,7 @@
     },
     "CONFIG_PATH": {
       "description": "Application config loader path.",
-      "value": "/app/directus.config.js"
+      "value": "/app/config.js"
     },
     "PUBLIC_URL": {
       "description": "Application public URL.",
