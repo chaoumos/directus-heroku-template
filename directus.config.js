@@ -1,5 +1,5 @@
 // Heroku to Directus mappings
-const parseDbUrl = require("parse-database-url");
+const parseDbUrl = require("parse-db-url");
 const dbConfig = parseDbUrl(process.env.DATABASE_URL);
 
 module.exports = {
