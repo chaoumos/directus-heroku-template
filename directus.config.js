@@ -3,7 +3,7 @@ const parseDbUrl = require("parse-db-url");
 const dbConfig = parseDbUrl(process.env.DATABASE_URL);
 
 module.exports = {
-  DB_CLIENT: dbConfig.driver || "walo",
+  DB_CLIENT: dbConfig.adapter || "walo",
   DB_HOST: dbConfig.host || "walo",
   DB_PORT: dbConfig.port || "walo",
   DB_DATABASE: dbConfig.database || "walo",
