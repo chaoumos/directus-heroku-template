@@ -37,6 +37,8 @@
       "description": "Database server type.",
       "value": "pg"
     },
+    
+
     "RATE_LIMITER_ENABLED": {
       "description": "Whether the rate limiter should be enabled or not.",
       "value": "true"

@@ -6,11 +6,8 @@
     "start": "directus start"
   },
   "dependencies": {
-    "directus": "^9.14.5",
-<<<<<<< HEAD
     "parse-database-url": "^0.3.0",
-=======
->>>>>>> f4bc037acd3c32275e6462f480c5dc7227366823
+    "directus": "^9.14.5",
     "pg": "^8.5.1"
   },
   "engines": {
