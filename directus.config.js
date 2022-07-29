@@ -11,7 +11,7 @@ const dbConfig = parseDbUrl(process.env.DATABASE_URL);
 // # DB_PASSWORD="secret"
 
 module.exports = {
-  DB_CLIENT: process.env.DB_CLIENT || "walo",
+  DB_CLIENT: process.env.DB_CLIENT || "pg",
   DB_HOST: dbConfig.host || "walo",
   DB_PORT: dbConfig.port || "walo",
   DB_DATABASE: dbConfig.database || "walo",
