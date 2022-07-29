@@ -25,6 +25,10 @@
       "description": "The initial admin password.",
       "value": ""
     },
+"PGSSLMODE":{
+       "description":"Disable connection SSL to PG DB",
+       "value":"no-verify"
+    },
     "CONFIG_PATH": {
       "description": "Application config loader path.",
       "value": "/app/config.js"
