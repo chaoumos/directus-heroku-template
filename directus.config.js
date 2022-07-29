@@ -17,7 +17,7 @@ module.exports = {
   DB_DATABASE: dbConfig.database || "walo",
   DB_USER: dbConfig.user || "walo",
   DB_PASSWORD: dbConfig.password || "walo",
-
+  DB_SSL: true,
   DB_CONNECTION_STRING:
     process.env.DB_CONNECTION_STRING || process.env.DATABASE_URL,
   RATE_LIMITER_REDIS: process.env.RATE_LIMITER_REDIS || process.env.REDIS_URL,
