@@ -9,15 +9,20 @@ const dbConfig = parseDbUrl(process.env.DATABASE_URL);
 // # DB_DATABASE="directus"
 // # DB_USER="postgres"
 // # DB_PASSWORD="secret"
+// admin@example.com"
+// ✨ No admin password provided. Defaulting to "o7ouyWgQAb7X"
 
 module.exports = {
   DB_CLIENT: process.env.DB_CLIENT || "pg",
-  DB_HOST: dbConfig.host || "walo",
-  DB_PORT: dbConfig.port || "walo",
+  DB_HOST: dbConfig.host || "waloo",
+  DB_PORT: dbConfig.port || "waloo",
   DB_DATABASE: dbConfig.database || "walo",
   DB_USER: dbConfig.user || "walo",
   DB_PASSWORD: dbConfig.password || "walo",
-  DB_SSL: true,
+
+  KEY: "33N8PkfOkmjEcWi2CQDnPbj7YjNtk5az",
+  SECRET: "hTqYKTugXue<5t:EMSgIYTsaz7FX=sC9ycxTiA5i3L..Xv^^ZDu:6]Z>xL+!",
+
   DB_CONNECTION_STRING:
     process.env.DB_CONNECTION_STRING || process.env.DATABASE_URL,
   RATE_LIMITER_REDIS: process.env.RATE_LIMITER_REDIS || process.env.REDIS_URL,
