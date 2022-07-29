@@ -2,8 +2,16 @@
 const parseDbUrl = require("parse-db-url");
 const dbConfig = parseDbUrl(process.env.DATABASE_URL);
 
+// # # Postgres
+// # DB_CLIENT="pg"
+// # DB_HOST="localhost"
+// # DB_PORT=5432
+// # DB_DATABASE="directus"
+// # DB_USER="postgres"
+// # DB_PASSWORD="secret"
+
 module.exports = {
-  DB_CLIENT: dbConfig.adapter || "walo",
+  DB_CLIENT: process.env.DB_CLIENT || "walo",
   DB_HOST: dbConfig.host || "walo",
   DB_PORT: dbConfig.port || "walo",
   DB_DATABASE: dbConfig.database || "walo",
