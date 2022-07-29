@@ -1,0 +1,25 @@
+{
+  "name": "directus-extension-posmodule",
+  "version": "1.0.0",
+  "keywords": [
+    "directus",
+    "directus-extension",
+    "directus-custom-module"
+  ],
+  "directus:extension": {
+    "type": "module",
+    "path": "dist/index.js",
+    "source": "src/index.js",
+    "host": "^9.13.0"
+  },
+  "scripts": {
+    "build": "directus-extension build -o ../extensions/modules/print_collection/index.js --watch"
+  },
+  "devDependencies": {
+    "@directus/extensions-sdk": "9.13.0",
+    "vue": "^3.2.37"
+  },
+  "dependencies": {
+    "vue-html-to-paper": "^1.4.4"
+  }
+}
