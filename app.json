@@ -37,7 +37,11 @@
       "description": "Database server type.",
       "value": "pg"
     },
-    
+
+    "PGSSLMODE": {
+      "description": "Disable connection SSL to PG DB",
+      "value": "no-verify"
+    },
 
     "RATE_LIMITER_ENABLED": {
       "description": "Whether the rate limiter should be enabled or not.",
