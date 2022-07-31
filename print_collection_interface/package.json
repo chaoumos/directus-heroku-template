@@ -1,0 +1,25 @@
+{
+  "name": "directus-extension-print_collection",
+  "version": "1.0.0",
+  "keywords": [
+    "directus",
+    "directus-extension",
+    "directus-custom-display"
+  ],
+  "directus:extension": {
+    "type": "display",
+    "path": "dist/index.js",
+    "source": "src/index.ts",
+    "host": "^9.13.0"
+  },
+  "scripts": {
+    "build": "directus-extension build -o ../extensions/interfaces/print_collection/index.js --watch"
+  },
+  "devDependencies": {
+    "@directus/extensions-sdk": "9.13.0",
+    "vue": "^3.2.37"
+  },
+  "dependencies": {
+    "editorjs-html": "^3.4.2"
+  }
+}
