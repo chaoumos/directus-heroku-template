@@ -6,7 +6,7 @@
     "start": "directus start"
   },
   "dependencies": {
-    "directus": "^9.14.5",
+    "directus": "^9.15.1",
     "parse-db-url": "^2.3.0",
     "pg": "^8.5.1"
   },
