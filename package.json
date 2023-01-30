@@ -8,7 +8,7 @@
   "dependencies": {
     "directus": "^9.14.5",
     "parse-db-url": "^2.3.0",
-    "pg": "^8.5.1"
+    "pg": "^8.9.0"
   },
   "engines": {
     "node": "16.15.0"
